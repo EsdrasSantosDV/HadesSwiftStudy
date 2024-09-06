@@ -10,7 +10,9 @@ import SwiftUI
 struct ImagemTutorial: View {
     var body: some View {
         //COMO COLOCAR IMAGEM
-        Image("goku").clipShape(Circle())
+        Image("goku")
+            .padding(.leading)
+            .clipShape(Circle())
             .overlay {
                 Circle().stroke(.gray, lineWidth: 4)
             }
